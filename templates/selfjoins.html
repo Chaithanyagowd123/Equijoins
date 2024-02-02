@@ -1,0 +1,51 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<center>
+<table border="3px">
+<tr>
+    <tr>
+
+        <th>empno</th>
+        <th>ename</th>
+     
+        <th>mgr</th>
+        <th>hiredate</th>
+        <th>sal</th>
+        <th>deptno</th>
+        
+        
+        </tr>
+   
+    <tr>
+
+     {% for emp in Empmgrobjects %}
+
+     <tr>
+       
+        <td>{{emp.empno}}</td>
+        <td>{{emp.ename}}</td>
+      
+        <td>{{emp.mgr}}</td>
+        <td>{{emp.hiredate}}</td>
+        <td>{{emp.sal}}</td>
+        <td>{{emp.deptno}}</td>
+      
+         
+    </tr>
+
+     {% endfor %}
+
+
+</table>
+</center>
+
+</body>
+</html>
+
+
